@@ -1,11 +1,15 @@
 import discord
 import os
-from decouple import config
-from discord.ext.commands import author
+import decouple
+from dotenv import load_dotenv
+# from discord.ext.commands import author
 # from discord import author
 
 
 client = discord.Client()
+
+load_dotenv()
+TOKEN = os.getenv('TOKEN')
 
 @client.event
 async def on_ready():
@@ -24,4 +28,4 @@ async def on_message(message):
         
 
 
-client.run(config('TOKEN'))
+client.run(TOKEN)

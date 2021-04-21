@@ -1,1 +1,1 @@
-export TOKEN={Token goes here}
+export TOKEN={ODM0MzU5MjQ3MDA0MzY4OTE2.YH_vmg.EnBmWFJ9vxGthys9mF9ePKCQrRQ}
