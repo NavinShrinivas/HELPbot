@@ -2,8 +2,7 @@ import discord
 import os
 import decouple
 from dotenv import load_dotenv
-# from discord.ext.commands import author
-# from discord import author
+
 
 
 client = discord.Client()
@@ -23,8 +22,8 @@ async def on_message(message):
 
     if message.content.startswith('$addteam'):
         l1=message.content.split(" ")
-        for i in l1:
-            await message.channel.send(i)
+        guild = message.guild
+        await guild.create_role(name=l1[len(l1)-1])
         
 
 
