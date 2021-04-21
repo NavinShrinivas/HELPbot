@@ -24,6 +24,12 @@ async def on_message(message):
         l1=message.content.split(" ")
         guild = message.guild
         await guild.create_role(name=l1[len(l1)-1])
+        role=l1[len(l1)-1]
+        users=[]
+        for i in range(1,(len(l1)-2)):
+            users.append(i)
+        for i in users:
+            await client.add_roles(i,role)
         
 
 
