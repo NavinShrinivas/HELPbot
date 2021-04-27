@@ -13,6 +13,7 @@ TOKEN = os.getenv('TOKEN')
 @client.event
 async def on_ready():
     print('I AM IN THE MATRIX [logged in]')
+ #this is a comment 1
 
 @client.event
 async def on_message(message):
